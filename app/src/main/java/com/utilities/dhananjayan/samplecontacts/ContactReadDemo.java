@@ -15,6 +15,7 @@ import android.widget.TextView;
 // hgjhg
 // yfyugfuyu
 // DHananjay ANkushrao
+// cxxx
 public class ContactReadDemo extends Activity {
 
     private Button m_objBtnSkypeContact;
