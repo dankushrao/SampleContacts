@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'SampleKeyStore'
+            keyPassword 'Sample@123'
+            storeFile file('D:/KeyStore/samplekey.jks')
+            storePassword 'Sample@123'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "com.utilities.dhananjayan.samplecontacts"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:23.1.1'
+}

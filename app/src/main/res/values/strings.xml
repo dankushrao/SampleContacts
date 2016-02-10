@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SampleContacts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- Display contact demo -->
+    <string name="lbl_phone_contact">Show Phone contacts</string>
+    <string name="lbl_skype_contact">Show Skype contacts</string>
+</resources>
